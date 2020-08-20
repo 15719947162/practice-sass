@@ -1,0 +1,26 @@
+.hhb {
+  color: red; }
+  .hhb:hover {
+    background-color: red; }
+  .hhb span {
+    font-size: 12px; }
+
+.test, .test p {
+  height: 100px;
+  border: 1px solid red; }
+  .test p {
+    width: 50px; }
+    .test p span {
+      color: red;
+      font-size: 30px; }
+    .test p:hover {
+      background-color: yellow; }
+
+.item-1 {
+  width: 2rem; }
+
+.item-2 {
+  width: 4rem; }
+
+.item-3 {
+  width: 6rem; }

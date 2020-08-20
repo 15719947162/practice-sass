@@ -1,0 +1,34 @@
+@import "./import.scss";
+.hhb{
+    color:$color;
+    &:hover {
+        background-color: $color;
+    };
+    span{
+        font-size: 12px;
+    };
+}
+
+.test{
+    height: 100px;
+    @include bordered($color,1px);
+    p{
+        width: 50px;
+        @extend .test;
+        span{
+            color:$color;
+            @include font-text;
+        };
+        &:hover{
+            background-color:$backgroundColor;
+        }
+    }
+}
+
+@for $i from 1 through 3
+{
+    .item-#{$i}
+    {
+        width:(j(200) * $i);
+    }
+}
